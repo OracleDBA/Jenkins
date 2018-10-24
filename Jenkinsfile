@@ -6,8 +6,8 @@ pipeline {
 		stage('Calling Jenkinsfile'){
 			steps{
 					echo "Pipeline example"
-				// javac sample.java
-				// java sample
+				bat javac sample.java
+				bat java sample
 			}
 	      }
 	 
