@@ -6,8 +6,9 @@ pipeline {
 		stage('Calling Jenkinsfile'){
 			steps{
 					echo "Pipeline example"
-				bat javac sample.java
-				bat java sample
+				tool name: 'Java-1.8.0', type: 'jdk'
+				javac sample.java
+				java sample
 			}
 	      }
 	 
